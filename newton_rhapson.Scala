@@ -2,7 +2,7 @@ import scala.math._
 import scala.util.control.Breaks._
 object newton_rhapson{
 	def main(args: Array[String])={
-      println(newton_rhapson(2,0.001,0.001,1000))
+		println(newton_rhapson(2,0.001,0.001,1000))
 	}
 	def funcion_objetivo(x: Double): Double={
 		return x*x -2
