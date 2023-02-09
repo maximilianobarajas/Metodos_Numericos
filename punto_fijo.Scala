@@ -2,10 +2,10 @@ import scala.math._
 import scala.util.control.Breaks._
 object punto_fijo {
 	def main(args: Array[String])={
-     punto_fijo(2,0.00001,100)
+		punto_fijo(2,0.00001,100)
 	}
 	def funcion_objetivo(x: Double): Double={
-      return (x*x*x + x*x -1)
+		return (x*x*x + x*x -1)
 	}
 	def funcion_modificada(x: Double): Double={
 		return (1/sqrt(1+x))
