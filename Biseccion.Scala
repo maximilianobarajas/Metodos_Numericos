@@ -8,6 +8,7 @@ object Biseccion {
         var tol=0.001
         while(n<=maximo){
             var c=(a+b)/2
+          
             if(funcion_objetivo(c)==0||(b-a)<tol){
          		println(c)
          		break
@@ -22,6 +23,6 @@ object Biseccion {
          }
     }
     def funcion_objetivo(x: Double): Double={
-         return (x*x*x - x -2)
+         return (x*x*x+ 2*x*x-3*x -1)
     }
 }
