@@ -8,7 +8,7 @@ object Biseccion {
         var tol=0.001
         while(n<=maximo){
             var c=(a+b)/2
-            if(funcion_objetivo(c)==0||(b-a)/2<tol){
+            if(funcion_objetivo(c)==0||(b-a)<tol){
          		println(c)
          		break
          	}
